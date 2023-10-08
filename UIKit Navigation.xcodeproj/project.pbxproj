@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E8603182AD161B4007FCE95 /* UIKit_NavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8603172AD161B4007FCE95 /* UIKit_NavigationApp.swift */; };
+		6E24DC702AD2BA5E009C24D7 /* BeverageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E24DC6F2AD2BA5E009C24D7 /* BeverageDetailView.swift */; };
+		6E24DC722AD2BBFA009C24D7 /* PushNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E24DC712AD2BBFA009C24D7 /* PushNavigationController.swift */; };
+		6E8603182AD161B4007FCE95 /* UIKitNavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8603172AD161B4007FCE95 /* UIKitNavigationApp.swift */; };
 		6E86031A2AD161B4007FCE95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8603192AD161B4007FCE95 /* ContentView.swift */; };
 		6E86031C2AD161B5007FCE95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E86031B2AD161B5007FCE95 /* Assets.xcassets */; };
 		6E86031F2AD161B5007FCE95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E86031E2AD161B5007FCE95 /* Preview Assets.xcassets */; };
+		6E86032D2AD165A8007FCE95 /* FoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E86032C2AD165A8007FCE95 /* FoodListViewController.swift */; };
+		6E86032F2AD165D5007FCE95 /* NavigationControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E86032E2AD165D5007FCE95 /* NavigationControllerWrapper.swift */; };
+		6E8603312AD16705007FCE95 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8603302AD16705007FCE95 /* FoodDetailView.swift */; };
+		6E86033A2AD1A335007FCE95 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8603392AD1A335007FCE95 /* UINavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E24DC6F2AD2BA5E009C24D7 /* BeverageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageDetailView.swift; sourceTree = "<group>"; };
+		6E24DC712AD2BBFA009C24D7 /* PushNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNavigationController.swift; sourceTree = "<group>"; };
 		6E8603142AD161B4007FCE95 /* UIKit Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E8603172AD161B4007FCE95 /* UIKit_NavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit_NavigationApp.swift; sourceTree = "<group>"; };
+		6E8603172AD161B4007FCE95 /* UIKitNavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitNavigationApp.swift; sourceTree = "<group>"; };
 		6E8603192AD161B4007FCE95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E86031B2AD161B5007FCE95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E86031E2AD161B5007FCE95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E86032C2AD165A8007FCE95 /* FoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewController.swift; sourceTree = "<group>"; };
+		6E86032E2AD165D5007FCE95 /* NavigationControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerWrapper.swift; sourceTree = "<group>"; };
+		6E8603302AD16705007FCE95 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		6E8603392AD1A335007FCE95 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E24DC732AD2BC88009C24D7 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				6E8603192AD161B4007FCE95 /* ContentView.swift */,
+				6E8603302AD16705007FCE95 /* FoodDetailView.swift */,
+				6E24DC6F2AD2BA5E009C24D7 /* BeverageDetailView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		6E24DC742AD2BDFA009C24D7 /* UIViewControllerRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				6E86032E2AD165D5007FCE95 /* NavigationControllerWrapper.swift */,
+			);
+			path = UIViewControllerRepresentable;
+			sourceTree = "<group>";
+		};
+		6E24DC752AD2BE0F009C24D7 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				6E24DC742AD2BDFA009C24D7 /* UIViewControllerRepresentable */,
+				6E86032C2AD165A8007FCE95 /* FoodListViewController.swift */,
+				6E24DC712AD2BBFA009C24D7 /* PushNavigationController.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		6E24DC772AD2BE31009C24D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E24DC752AD2BE0F009C24D7 /* UIKit */,
+				6E24DC732AD2BC88009C24D7 /* SwiftUI */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		6E86030B2AD161B4007FCE95 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +100,9 @@
 		6E8603162AD161B4007FCE95 /* UIKit Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				6E8603172AD161B4007FCE95 /* UIKit_NavigationApp.swift */,
-				6E8603192AD161B4007FCE95 /* ContentView.swift */,
+				6E8603172AD161B4007FCE95 /* UIKitNavigationApp.swift */,
+				6E24DC772AD2BE31009C24D7 /* Views */,
+				6E8603362AD17845007FCE95 /* Extensions */,
 				6E86031B2AD161B5007FCE95 /* Assets.xcassets */,
 				6E86031D2AD161B5007FCE95 /* Preview Content */,
 			);
@@ -65,6 +115,14 @@
 				6E86031E2AD161B5007FCE95 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6E8603362AD17845007FCE95 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E8603392AD1A335007FCE95 /* UINavigationController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +196,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E86031A2AD161B4007FCE95 /* ContentView.swift in Sources */,
-				6E8603182AD161B4007FCE95 /* UIKit_NavigationApp.swift in Sources */,
+				6E8603312AD16705007FCE95 /* FoodDetailView.swift in Sources */,
+				6E8603182AD161B4007FCE95 /* UIKitNavigationApp.swift in Sources */,
+				6E86032D2AD165A8007FCE95 /* FoodListViewController.swift in Sources */,
+				6E86032F2AD165D5007FCE95 /* NavigationControllerWrapper.swift in Sources */,
+				6E24DC722AD2BBFA009C24D7 /* PushNavigationController.swift in Sources */,
+				6E24DC702AD2BA5E009C24D7 /* BeverageDetailView.swift in Sources */,
+				6E86033A2AD1A335007FCE95 /* UINavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
